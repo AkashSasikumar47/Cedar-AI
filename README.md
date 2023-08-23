@@ -37,7 +37,7 @@ You can view the live demo of my portfolio website at [https://www.your-portfoli
 
 ## Contact
 
-Feel free to reach out to me via email at [your.email@example.com](mailto:your.akashsasikumar47@gmail.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/akash-sasikumar47).
+Feel free to reach out to me via email at [akashsasikumar47@gmail.com](mailto:your.akashsasikumar47@gmail.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/akash-sasikumar47).
 
 ## License
 
