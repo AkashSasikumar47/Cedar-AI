@@ -469,7 +469,7 @@ TechStack
 /*/////////////////////////////////////////
 Custom Cards
 ////////////////////////////////////////*/
-/* Reset and basic styling */
+
 .project-reset,
 .project-reset::before,
 .project-reset::after {
@@ -560,4 +560,34 @@ Custom Cards
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+/*/////////////////////////////////////////
+About Me Page
+////////////////////////////////////////*/
+
+.profile-image img {
+    width: 250px;
+    height: 275px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.project-image img {
+    width: 350px;
+    height: 375px;
+    border-radius: 25;
+    margin-bottom: 20px;
+}
+
+.custom-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-content {
+    text-align: left;
+    padding: 20px;
 }
