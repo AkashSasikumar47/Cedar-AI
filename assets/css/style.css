@@ -305,6 +305,7 @@ About Me
 .about-content p {
     font-size: 18px;
     color: #ffffff;
+    text-align: justify;
     margin-bottom: 20px;
 }
 
@@ -388,6 +389,102 @@ Portfolio
     font-size: 20px;
     margin-left: 10px;
     vertical-align: middle;
+}
+
+/*/////////////////////////////////////////
+Custom Cards
+////////////////////////////////////////*/
+
+.project-reset,
+.project-reset::before,
+.project-reset::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.project-html,
+.project-body {
+    height: 100%;
+}
+
+.project-body {
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    place-items: center;
+    background-color: #000;
+}
+
+/* ============================ */
+.project-card-group {
+    max-width: 1260px;
+    display: flex;
+    column-gap: 16px;
+    padding: 50px;
+    overflow-x: scroll;
+}
+
+.project-card {
+    flex: 0 0 300px;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    background-image: linear-gradient(45deg, #1f1e2d, #1c192f);
+    padding: 32px;
+    box-shadow: -5px 0 16px 32px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    transition: transform 250ms;
+}
+
+.project-card:not(:first-child) {
+    margin-left: -130px;
+}
+
+.project-card:hover {
+    transform: translate(-8px, -16px) rotate(3deg);
+}
+
+.project-card:hover~.project-card {
+    transform: translateX(130px);
+}
+
+.project-card-date {
+    display: block;
+    color: #777777;
+    margin-bottom: 3px;
+    font-size: 14px;
+}
+
+.project-card-date strong {
+    color: #d4d4d4;
+}
+
+.project-card-title {
+    font-size: 26px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.project-card-footer {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    color: #fff;
+}
+
+.project-card-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.project-card-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /*/////////////////////////////////////////
@@ -535,102 +632,6 @@ Media queries
 @media (max-width: 991.98px) {}
 
 @media (max-width: 1199.98px) {}
-
-/*/////////////////////////////////////////
-Custom Cards
-////////////////////////////////////////*/
-
-.project-reset,
-.project-reset::before,
-.project-reset::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.project-html,
-.project-body {
-    height: 100%;
-}
-
-.project-body {
-    font-family: 'Poppins', sans-serif;
-    display: grid;
-    place-items: center;
-    background-color: #000;
-}
-
-/* ============================ */
-.project-card-group {
-    max-width: 1260px;
-    display: flex;
-    column-gap: 16px;
-    padding: 50px;
-    overflow-x: scroll;
-}
-
-.project-card {
-    flex: 0 0 300px;
-    display: flex;
-    flex-direction: column;
-    height: 300px;
-    background-image: linear-gradient(45deg, #1f1e2d, #1c192f);
-    padding: 32px;
-    box-shadow: -5px 0 16px 32px rgba(0, 0, 0, 0.25);
-    border-radius: 25px;
-    transition: transform 250ms;
-}
-
-.project-card:not(:first-child) {
-    margin-left: -130px;
-}
-
-.project-card:hover {
-    transform: translate(-8px, -16px) rotate(3deg);
-}
-
-.project-card:hover~.project-card {
-    transform: translateX(130px);
-}
-
-.project-card-date {
-    display: block;
-    color: #777777;
-    margin-bottom: 3px;
-    font-size: 14px;
-}
-
-.project-card-date strong {
-    color: #d4d4d4;
-}
-
-.project-card-title {
-    font-size: 26px;
-    color: #fff;
-    text-decoration: none;
-}
-
-.project-card-footer {
-    margin-top: auto;
-    display: flex;
-    align-items: center;
-    column-gap: 8px;
-    color: #fff;
-}
-
-.project-card-image {
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.project-card-image img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 /*/////////////////////////////////////////
 About Me Page
