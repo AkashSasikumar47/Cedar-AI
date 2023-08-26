@@ -135,6 +135,11 @@ button {
 Hero
 ////////////////////////////////////////*/
 
+#hero {
+    position: relative;
+    overflow: hidden;
+}
+
 #hero h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 60px;
@@ -182,26 +187,112 @@ Hero
     font-size: 20px;
 }
 
-.hero-button {
-    background-color: #ffffff;
-    position: absolute;
-    padding: 15px 30px;
-    bottom: 30px;
-    left: 30px;
+.btn {
+    display: inline-block;
+    margin-top: 70px;
+    background-color: #6044D8;
+    color: #ffffff;
+    border-radius: 25px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* GSAP animation */
+.btn-animated-gsap {
+    overflow: hidden;
 }
 
 .mobile-only {
     display: none;
 }
 
+.animated-heading,
+.animated-subheading {
+    opacity: 100;
+    transform: translateY(20px);
+}
+
+.parallax-container {
+    position: relative;
+    height: 100vh;
+    perspective: 1px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.parallax-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/images/Figma_designs/example.svg');
+    background-size: cover;
+    background-position: center;
+    transform-origin: center;
+    transform: translateZ(-1px) scale(2);
+}
+
+.hero-text {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s, transform 1s;
+}
+
+/*/////////////////////////////////////////
+TechStack
+////////////////////////////////////////*/
+
+#TechStack {
+    background-color: #000000;
+    padding: 30px 0;
+}
+
+.tech-stack-container {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.tech-stack {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scrollLeft 30s linear infinite;
+    animation-delay: -5s;
+}
+
+.tech-stack span {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    color: #252437;
+    margin: 0 15px;
+}
+
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
 /*/////////////////////////////////////////
 About Me
 ////////////////////////////////////////*/
 
-
-#About {
+.about-section {
     background-color: #000000;
     padding: 80px 0;
+    position: relative;
 }
 
 .about-content h2 {
@@ -222,6 +313,26 @@ About Me
     height: auto;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.highlight-text {
+    color: #9166FF;
+}
+
+.read-more-btn {
+    margin-top: 25px;
+    background-color: #252437;
+    color: #ffffff;
+    border-radius: 25px;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #6044D8;
+    color: #ffffff;
 }
 
 /*/////////////////////////////////////////
@@ -424,47 +535,6 @@ Media queries
 @media (max-width: 991.98px) {}
 
 @media (max-width: 1199.98px) {}
-
-/*/////////////////////////////////////////
-TechStack
-////////////////////////////////////////*/
-
-#TechStack {
-    background-color: #000000;
-    padding: 30px 0;
-}
-
-.tech-stack-container {
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.tech-stack {
-    display: inline-block;
-    white-space: nowrap;
-    animation: scrollLeft 30s linear infinite;
-    animation-delay: -5s;
-}
-
-.tech-stack span {
-    display: inline-block;
-    font-family: 'Poppins', sans-serif;
-    font-size: 50px;
-    font-weight: 600;
-    color: #252437;
-    margin: 0 15px;
-}
-
-@keyframes scrollLeft {
-    0% {
-        transform: translateX(100%);
-    }
-
-    100% {
-        transform: translateX(-100%);
-    }
-}
 
 /*/////////////////////////////////////////
 Custom Cards
