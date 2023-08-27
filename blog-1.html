@@ -19,7 +19,7 @@
     <meta property="og:url" content="https://akashsasikumar.com/portfolio">
     <meta property="og:image:alt" content="Akash Sasikumar's Portfolio">
 
-    <link rel="canonical" href="https://themesbootstrap.com.mx/templates/personal-portfolio-template/index.html" />
+    <link rel="canonical" href="https://akashsasikumar47.github.io/Akash-Sasikumar-Portfolio/" />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
@@ -35,11 +35,15 @@
     <link href="https://unpkg.com/ionicons@4.2.0/dist/css/ionicons.min.css" rel="stylesheet">
 
     <!-- Favicon for Various Devices -->
-    <link rel="shortcut icon" href="assets/images/favicon.png" /> <!-- Standard Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="assets/images/logo/favicon.png" /> <!-- Standard Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/logo/apple-touch-icon.png">
 
 
     <title>Akash Sasikumar - Portfolio</title>
+
+    <!-- Custom Additions -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68929300-2"></script>
     <script>
@@ -57,7 +61,7 @@
     <!-- Navigation Bar -->
     <nav class="navbar fixed-top navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="assets/images/logo.svg" class="header-logo"></a>
+            <a class="navbar-brand" href="index.html"><img src="assets/images/logo/logo.svg" class="header-logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="icon ion-md-menu"></i>
@@ -71,7 +75,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#call-to-action">Contact</a>
                     </li>
-
                 </ul>
             </div>
         </div>
@@ -164,21 +167,38 @@
     </section>
 
     <!-- Contact Me -->
-    <section id=" call-to-action">
+    <section id="call-to-action">
         <div class="container" style="text-align: center;">
             <div class="heading-content">
                 <span>Get in touch</span>
-                <h2 style="font-size: 36px; font-weight: 600; color: #ffffff;">Let's Start a New
-                    Project</h2>
+                <h2 style="font-size: 36px; font-weight: 600; color: #ffffff;">Let's Start a New Project</h2>
                 <p class="margintop" style="font-family: 'Poppins', sans-serif; font-size: 18px; color: #ffffff;">
                     Reach out to discuss your ideas and collaborate on exciting projects. I'm
                     eager to hear from you!</p>
-                <a href="#" class="btn btn-pill"
+                <a href="#" class="btn btn-pill open-modal"
                     style="margin-top: 15px; background-color: #6044D8; color: #ffffff; border-radius: 25px; padding: 10px 20px; text-align: center; text-decoration: none; transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;">Contact
                     Me</a>
+                <a href="assets/files/AKASH - Resume.pdf" class="btn btn-pill"
+                    style="margin-top: 15px; background-color: #5d5d5d; color: #ffffff; border-radius: 25px; padding: 10px 20px; text-align: center; text-decoration: none; transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;"
+                    download>Download Resume</a>
             </div>
         </div>
     </section>
+
+    <!-- Contact Modal -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Contact Me</h2>
+            <form id="contact-form" action="process-contact-form.php" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit" class="btn btn-submit"
+                    style="margin-top: 15px; background-color: #6044D8; color: #ffffff; border-radius: 25px; padding: 10px 20px; text-align: center; text-decoration: none; transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;">Send</button>
+            </form>
+        </div>
+    </div>
 
     <!-- Footer -->
     <section id="footer">

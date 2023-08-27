@@ -96,7 +96,7 @@
                 <h2 class="animated-subheading">A Computer Science Engineer by training, a dedicated UI/UX Designer at
                     heart, an Algorithmic Trader
                     in practice, and a Software Developer crafting innovative Web Applications.</h2>
-                <a href="#contact" class="btn btn-pill btn-animated-gsap">
+                <a href="#call-to-action" class="btn btn-pill btn-animated-gsap">
                     Get in touch
                 </a>
             </div>
@@ -306,12 +306,30 @@
                 <p class="margintop" style="font-family: 'Poppins', sans-serif; font-size: 18px; color: #ffffff;">
                     Reach out to discuss your ideas and collaborate on exciting projects. I'm
                     eager to hear from you!</p>
-                <a href="#" class="btn btn-pill"
+                <a href="#" class="btn btn-pill open-modal"
                     style="margin-top: 15px; background-color: #6044D8; color: #ffffff; border-radius: 25px; padding: 10px 20px; text-align: center; text-decoration: none; transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;">Contact
                     Me</a>
+                <a href="assets/files/AKASH - Resume.pdf" class="btn btn-pill"
+                    style="margin-top: 15px; background-color: #5d5d5d; color: #ffffff; border-radius: 25px; padding: 10px 20px; text-align: center; text-decoration: none; transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;"
+                    download>Download Resume</a>
             </div>
         </div>
     </section>
+
+    <!-- Contact Modal -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Contact Me</h2>
+            <form id="contact-form" action="process-contact-form.php" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit" class="btn btn-submit"
+                    style="margin-top: 15px; background-color: #6044D8; color: #ffffff; border-radius: 25px; padding: 10px 20px; text-align: center; text-decoration: none; transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;">Send</button>
+            </form>
+        </div>
+    </div>
 
     <!-- Footer -->
     <section id="footer">
