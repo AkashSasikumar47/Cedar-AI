@@ -21,6 +21,10 @@ h5,
 h6 {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
+    background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.42) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 a {
@@ -33,26 +37,51 @@ a:hover {
     text-decoration: none;
 }
 
+.pop-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #0063F6;
+}
+
 .primary-btn {
     font-family: 'Poppins', sans-serif;
-    background-color: #ffffff;
-    color: #000000 !important;
-    padding: 10px 20px;
-    border-radius: 25px;
     display: inline-block;
-    margin-top: 20px;
+    padding: 10px 25px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: 1px solid #2873FD;
+    background: linear-gradient(180deg, #0F60FF 0%, #00046D 100%);
+    color: #ffffff !important;
     text-align: center;
     text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+    margin-top: 72px;
 }
 
 .primary-btn:hover {
-    background-color: #6044D8;
+    background-color: #0F60FF;
     color: #ffffff;
     opacity: 0.9;
     text-decoration: none;
 }
 
+.secondary-btn {
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    padding: 10px 25px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: 1px solid #8C8C8C;
+    background: linear-gradient(180deg, #5E5E5E 0%, #2C2C2C 100%);
+    color: #ffffff !important;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+    margin-top: 10px;
+}
 
 section {
     padding: 100px 0;
@@ -143,8 +172,7 @@ Hero
 #hero h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 60px;
-    line-height: 1.6;
-    color: #ffffff;
+    line-height: 1.4;
     font-weight: 600;
     max-width: 800px;
     margin: 0 auto;
@@ -153,7 +181,7 @@ Hero
 #hero h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
-    color: #A1A3BB;
+    line-height: 1.4;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 40px;
@@ -172,7 +200,7 @@ Hero
 
 .hero-details {
     position: absolute;
-    color: #ffffff;
+    color: #8C8C8C;
     top: 30px;
     left: 30px;
     max-width: 600px;
@@ -185,21 +213,6 @@ Hero
 
 .hero-details p {
     font-size: 20px;
-}
-
-.btn {
-    display: inline-block;
-    margin-top: 70px;
-    background-color: #6044D8;
-    color: #ffffff;
-    border-radius: 25px;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
 }
 
 /* GSAP animation */
@@ -223,19 +236,6 @@ Hero
     perspective: 1px;
     overflow-x: hidden;
     overflow-y: auto;
-}
-
-.parallax-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('assets/images/Figma_designs/example.svg');
-    background-size: cover;
-    background-position: center;
-    transform-origin: center;
-    transform: translateZ(-1px) scale(2);
 }
 
 .hero-text {
@@ -266,12 +266,19 @@ TechStack
     animation-delay: -5s;
 }
 
+.tech-stack span:nth-child(odd) {
+    color: #82848f;
+}
+
+.tech-stack span:nth-child(even) {
+    color: #4e506d;
+}
+
 .tech-stack span {
     display: inline-block;
     font-family: 'Poppins', sans-serif;
     font-size: 50px;
     font-weight: 600;
-    color: #252437;
     margin: 0 15px;
 }
 
@@ -291,49 +298,37 @@ About Me
 
 .about-section {
     background-color: #000000;
-    padding: 80px 0;
+    padding: 20px 30px;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-content {
+    text-align: center;
 }
 
 .about-content h2 {
     font-size: 36px;
     color: #ffffff;
     font-weight: 600;
+    text-align: center;
     margin-bottom: 20px;
 }
 
 .about-content p {
     font-size: 18px;
-    color: #ffffff;
+    color: #8C8C8C;
+    font-weight: 500;
     text-align: justify;
     margin-bottom: 20px;
 }
 
-.about-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 .highlight-text {
-    color: #9166FF;
-}
-
-.read-more-btn {
-    margin-top: 25px;
-    background-color: #252437;
-    color: #ffffff;
-    border-radius: 25px;
-    padding: 10px 30px;
-    text-align: center;
-    text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
-}
-
-.read-more-btn:hover {
-    background-color: #6044D8;
-    color: #ffffff;
+    color: #bababa;
 }
 
 /*/////////////////////////////////////////
@@ -734,4 +729,61 @@ Contact Me
 
 .btn-submit:hover {
     background-color: #4833c6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 1;
+    max-width: calc(25% - 20px);
+    margin: 10px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.card .btn {
+    background-color: #0063F6;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+    background-color: #004fcb;
 }
