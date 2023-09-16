@@ -267,11 +267,11 @@ TechStack
 }
 
 .tech-stack span:nth-child(odd) {
-    color: #82848f;
+    color: #ffffff50;
 }
 
 .tech-stack span:nth-child(even) {
-    color: #4e506d;
+    color: #ffffffc2;
 }
 
 .tech-stack span {
@@ -473,8 +473,8 @@ Blog
     position: relative;
     padding: 40px;
     margin: 10px 0;
-    border-radius: 25px;
-    border: 2px solid #A1A3BB;
+    border-radius: 12px;
+    border: 1.5px solid #ffffff80;
     color: #ffffff;
 }
 
