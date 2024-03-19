@@ -3,6 +3,16 @@
 import React from 'react';
 import Head from 'next/head';
 
+import Navbar from './components/Navbar/Navbar';
+import Hero from './components/Hero/Hero';
+import About from './components/About/About';
+import Projects from './components/Projects/Projects';
+import Experience from './components/Experience/Experience';
+import Education from './components/Education/Education';
+import Techstack from './components/Techstack/Techstack';
+import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
+
 import '../app/globals.css';
 
 const HomePage: React.FC = () => {
@@ -36,9 +46,14 @@ const HomePage: React.FC = () => {
         {/* Replace '/img/twitter-card-image.jpg' with the path to your custom Twitter Card image */}
       </Head>
 
-      <h1 className="text-3xl text-blue-500 font-bold underline">
-        Hello world!
-      </h1>
+      <Hero />
+      <About />
+      <Projects />
+      <Experience />
+      <Education />
+      <Techstack />
+      <Contact />
+      <Footer />
 
     </div>
   );
