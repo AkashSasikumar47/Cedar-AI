@@ -1,0 +1,39 @@
+.techstack {
+    display: flex;
+    white-space: nowrap;
+    width: 100%;
+    height: 32px;
+    overflow: hidden;
+}
+
+.loop-text-rl {
+    font-size: 14px;
+    font-weight: 500;
+    animation: loopTextRL 20s infinite linear;
+}
+
+.loop-text-lr {
+    font-size: 14px;
+    font-weight: 500;
+    animation: loopTextLR 20s infinite linear;
+}
+
+@keyframes loopTextRL {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes loopTextLR {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
