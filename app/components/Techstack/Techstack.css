@@ -9,13 +9,13 @@
 .loop-text-rl {
     font-size: 14px;
     font-weight: 500;
-    animation: loopTextRL 20s infinite linear;
+    animation: loopTextRL 30s infinite linear;
 }
 
 .loop-text-lr {
     font-size: 14px;
     font-weight: 500;
-    animation: loopTextLR 20s infinite linear;
+    animation: loopTextLR 50s infinite linear;
 }
 
 @keyframes loopTextRL {

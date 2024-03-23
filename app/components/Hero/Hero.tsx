@@ -16,9 +16,9 @@ const Hero = () => {
                                 className="h-24 w-36 object-cover object-center transition duration-200 group-hover:scale-110"
                             />
                             */}
-                            <dt className="text-sm font-medium leading-8 text-gray-800">San Francisco, CA, USA</dt>
-                            <h3 className="mt-1 text-xs text-gray-500 mb-1"><a href="mailto:luke@email.com">luke@email.com</a></h3>
-                            <h3 className="mt-1 text-xs text-gray-500 mb-1"><a href="#">klio.framer.website</a></h3>
+                            <dt className="text-sm font-medium leading-8 text-gray-800">Kerala, India</dt>
+                            <h3 className="mt-1 text-xs text-gray-500 mb-1"><a href="mailto:akashsasikumar47@email.com">akashsasikumar47@gmail.com</a></h3>
+                            <h3 className="mt-1 text-xs text-gray-500 mb-1"><a href="#">Let's Connect</a></h3>
                         </div>
                     </div>
                     {/* Right Column */}
@@ -30,8 +30,8 @@ const Hero = () => {
                                 alt="Photo by Austin Wade"
                                 className="h-60 w-40 object-cover rounded-4xl object-center transition duration-200 group-hover:scale-110"
                             />
-                            <h1 className="text-lg mt-6 font-medium leading-8 text-gray-800">I’m Luke Stone — product designer</h1>
-                            <h2 className="mt-1 text-base leading-6 text-gray-500">Focusing on pixel precise digital products with much love</h2>
+                            <h1 className="text-lg mt-6 font-medium leading-8 text-gray-800">I'm Akash Sasikumar — Full Stack Developer</h1>
+                            <h2 className="mt-1 text-base leading-6 text-gray-500">Passionate About Crafting Exceptional Digital Experiences</h2>
                         </div>
                     </div>
                 </div>

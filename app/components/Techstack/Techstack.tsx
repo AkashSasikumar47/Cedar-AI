@@ -12,14 +12,26 @@ const Techstack = () => {
                         <div className="bg-red-100 mt-6 sm:mt-0 sm:col-span-2 sm:grid">
                             <div className="bg-red-100 mt-6 sm:mt-0 sm:col-span-2 sm:grid">
                                 <div className="techstack w-full">
-                                    <span className="loop-text-rl">JavaScript ✦ TypeScript ✦ Python ✦ C++ ✦ C ✦ MySQL ✦ PostgreSQL ✦ MongoDB ✦</span>
-                                    <span className="ml-1 loop-text-rl">JavaScript ✦ TypeScript ✦ Python ✦ C++ ✦ C ✦ MySQL ✦ PostgreSQL ✦ MongoDB ✦</span>
+                                    <span className="loop-text-rl">JavaScript ✦ TypeScript ✦ Python ✦ C++ ✦ C ✦ JavaScript ✦ TypeScript ✦ Python ✦ C++ ✦ C ✦</span>
+                                    <span className="ml-1 loop-text-rl">JavaScript ✦ TypeScript ✦ Python ✦ C++ ✦ C ✦ JavaScript ✦ TypeScript ✦ Python ✦ C++ ✦ C ✦</span>
                                 </div>
                             </div>
                             <div className="bg-red-100 sm:col-span-2 sm:grid">
                                 <div className="techstack w-full">
-                                    <span className="loop-text-lr">NextJS ✦ ReactJS ✦ NodeJS ✦ ExpressJS ✦ HTML ✦ CSS ✦ Docker ✦ Kubernetes ✦ Git ✦ AWS ✦ Microsoft Azure ✦</span>
-                                    <span className="ml-1 loop-text-lr">NextJS ✦ ReactJS ✦ NodeJS ✦ ExpressJS ✦ HTML ✦ CSS ✦ Docker ✦ Kubernetes ✦ Git ✦ AWS ✦ Microsoft Azure ✦</span>
+                                    <span className="loop-text-lr">NextJS ✦ ReactJS ✦ NodeJS ✦ ExpressJS ✦ HTML ✦ CSS ✦ NextJS ✦ ReactJS ✦ NodeJS ✦ ExpressJS ✦ HTML ✦ CSS ✦</span>
+                                    <span className="ml-1 loop-text-lr">NextJS ✦ ReactJS ✦ NodeJS ✦ ExpressJS ✦ HTML ✦ CSS ✦ NextJS ✦ ReactJS ✦ NodeJS ✦ ExpressJS ✦ HTML ✦ CSS ✦</span>
+                                </div>
+                            </div>
+                            <div className="bg-red-100 sm:mt-0 sm:col-span-2 sm:grid">
+                                <div className="techstack w-full">
+                                    <span className="loop-text-rl">MySQL ✦ PostgreSQL ✦ MongoDB ✦ MySQL ✦ PostgreSQL ✦ MongoDB ✦</span>
+                                    <span className="ml-1 loop-text-rl">MySQL ✦ PostgreSQL ✦ MongoDB ✦ MySQL ✦ PostgreSQL ✦ MongoDB ✦</span>
+                                </div>
+                            </div>
+                            <div className="bg-red-100 sm:col-span-2 sm:grid">
+                                <div className="techstack w-full">
+                                    <span className="loop-text-lr">Docker ✦ Kubernetes ✦ Git ✦ AWS ✦ Microsoft Azure ✦ Firebase ✦ Docker ✦ Kubernetes ✦ Git ✦ AWS ✦ Microsoft Azure ✦ Firebase ✦</span>
+                                    <span className="ml-1 loop-text-lr">Docker ✦ Kubernetes ✦ Git ✦ AWS ✦ Microsoft Azure ✦ Firebase ✦ Docker ✦ Kubernetes ✦ Git ✦ AWS ✦ Microsoft Azure ✦ Firebase ✦</span>
                                 </div>
                             </div>
                         </div>

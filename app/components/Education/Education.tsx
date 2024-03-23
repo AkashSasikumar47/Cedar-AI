@@ -10,28 +10,18 @@ const Education = () => {
 
                         <div className="mt-6 sm:mt-0 sm:col-span-2 sm:grid sm:grid-cols-1">
                             <div className="bg-green-100 flex flex-col text-sm leading-6 text-gray-500">
-                                <h2 className="text-base font-medium leading-8 text-gray-800">Master of Arts in Interaction Design</h2>
-                                <h3 className="mt-1 text-xs leading-6 text-gray-500">Stanford University</h3>
-                                <h3 className="mt-1 text-xs leading-6 text-gray-500">2012 — 2014</h3>
+                                <h2 className="text-base font-medium leading-8 text-gray-800">B.Tech in Computer Science and Engineering</h2>
+                                <h3 className="mt-1 text-xs leading-6 text-gray-500">SRM Institute of Science and Technology</h3>
+                                <h3 className="mt-1 text-xs leading-6 text-gray-500">2021 — 2025</h3>
                                 <dd className="mt-2 text-sm leading-6 text-gray-500">
-                                    Fugiat ipsum ipsum deserunt culpa aute sint do nostrud anim incididunt cillum culpa consequat. Excepteur
-                                </dd>
+                                    Skilled in Full-stack development, Mobile application development, and agile software development methodologies.                                </dd>
                             </div>
                             <div className="bg-gray-100 flex flex-col text-sm leading-6 text-gray-500">
-                                <h2 className="text-base font-medium leading-8 text-gray-800">Master of Arts in Interaction Design</h2>
-                                <h3 className="mt-1 text-xs leading-6 text-gray-500">Stanford University</h3>
-                                <h3 className="mt-1 text-xs leading-6 text-gray-500">2012 — 2014</h3>
+                                <h2 className="text-base font-medium leading-8 text-gray-800">B.Sc in Data Science & Applications</h2>
+                                <h3 className="mt-1 text-xs leading-6 text-gray-500">IIT Madras</h3>
+                                <h3 className="mt-1 text-xs leading-6 text-gray-500">2022-2025</h3>
                                 <dd className="mt-2 text-sm leading-6 text-gray-500">
-                                    Fugiat ipsum ipsum deserunt culpa aute sint do nostrud anim incididunt cillum culpa consequat. Excepteur
-                                </dd>
-                            </div>
-                            <div className="bg-red-200 flex flex-col text-sm leading-6 text-gray-500">
-                                <h2 className="text-base font-medium leading-8 text-gray-800">Master of Arts in Interaction Design</h2>
-                                <h3 className="mt-1 text-xs leading-6 text-gray-500">Stanford University</h3>
-                                <h3 className="mt-1 text-xs leading-6 text-gray-500">2012 — 2014</h3>
-                                <dd className="mt-2 text-sm leading-6 text-gray-500">
-                                    Fugiat ipsum ipsum deserunt culpa aute sint do nostrud anim incididunt cillum culpa consequat. Excepteur
-                                </dd>
+                                    Proficient in data analysis, machine learning algorithms, and data visualization techniques.                                </dd>
                             </div>
                         </div>
                     </div>
