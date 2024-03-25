@@ -26,7 +26,7 @@ const Hero = () => {
                         <div className="bg-red-100 flex flex-col mt-6 sm:mt-0 sm:col-span-2 text-sm leading-6 text-gray-500">
                             {/*
                             <img
-                                src="/img/akash/FullSizeRender.jpg"
+                                src="/img/akash/profile.jpg"
                                 loading="lazy"
                                 alt="Photo by Austin Wade"
                                 className="h-60 w-40 object-cover rounded-4xl object-center transition duration-200 group-hover:scale-110"
