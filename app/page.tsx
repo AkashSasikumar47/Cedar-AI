@@ -21,7 +21,6 @@ const HomePage: React.FC = () => {
       <Navbar2 />
       <Hero />
       <About />
-      <Projects />
       <Experience />
       <Education />
       <Techstack />
