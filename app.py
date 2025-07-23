@@ -4,7 +4,7 @@ from processor import process_workbook
 st.set_page_config(page_title="Excel Sales Report Cleaner", layout="centered")
 
 st.title("📊 Excel Sales Report Cleaner")
-st.write("Upload your monthly sales report. The app will clean, format, and summarize it.")
+st.write("Upload your Next 24 Hours - (Month) 2025 sales report. The app will clean, format, and summarize it.")
 
 if "processed_file" not in st.session_state:
     st.session_state.processed_file = None
